@@ -29,9 +29,9 @@ formulario.addEventListener('submit', (e) => {
 
 
 
-function buscar(cidade) {
+function buscar(cidade , key) {
 
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=def92bb55b6be62bf1fab62695bdb5aa&units=metric&lang=pt_br`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${key}&units=metric&lang=pt_br`)
 
         .then(T => T.json())
 
